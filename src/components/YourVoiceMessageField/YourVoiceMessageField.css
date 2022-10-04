@@ -5,17 +5,28 @@
   width: 90%;
 }
 
-.msg-container .input-data input {
-  height: 100%;
-  width: 100%;
+.msg-container .input-data textarea {
+  height: fit-content !important;
+  width: 100% !important;
   border: none;
   border-bottom: 1px solid #000000;
   padding-bottom: 8px;
   outline: none;
+  resize: none;
+  font-size: 1rem;
 }
 
 .character-count {
   font-size: 14px;
   text-align: right;
   margin-top: 5px;
+}
+
+.input-data button {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+.input-data button a {
+  display: block;
 }
