@@ -6,7 +6,9 @@ const YourVoiceMessageField = () => {
     <div className="msg-container">
       <div className="input-data">
         <input type="text" placeholder="Add your voice" />
-        <label htmlFor=""></label>
+        <p style={{ color: '#249847' }} className="character-count">
+          characters
+        </p>
       </div>
     </div>
   );
