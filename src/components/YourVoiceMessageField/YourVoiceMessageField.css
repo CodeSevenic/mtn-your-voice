@@ -1,0 +1,15 @@
+﻿.msg-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.msg-container .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+  outline: none;
+}
