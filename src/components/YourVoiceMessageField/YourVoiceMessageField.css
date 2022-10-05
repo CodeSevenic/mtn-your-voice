@@ -22,10 +22,11 @@
 .character-count {
   font-size: 14px;
   text-align: right;
-  margin-top: 5px;
+  flex-grow: 1;
 }
 
 .input-data button {
+  position: relative;
   margin: 10px auto 0 auto;
   text-align: center;
   display: block;
@@ -33,6 +34,11 @@
   border: none;
   padding: 14px 70px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.input-data button.submitting {
+  background: #a8a8a8;
 }
 
 .input-data button a {
@@ -42,6 +48,9 @@
   font-weight: bold;
   color: black;
   font-family: 'MTNBrighterSans';
+}
+.input-data button a.submitting {
+  color: white;
 }
 
 .warning-msg {
@@ -63,4 +72,89 @@
 
 .close-icon:hover {
   fill: rgb(139, 10, 10);
+}
+
+.load-spinner {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.load-spinner img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.msg-flags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.msg-flags > p {
+  padding-top: 2px;
+  font-size: 12px;
+}
+
+p.empty-msg {
+  font-size: 10px !important;
+}
+
+.success-window {
+  background: #fff;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  padding: 50px 40px 20px 40px;
+}
+
+.success-mark {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #299638;
+  width: fit-content;
+  padding: 12px 50px;
+  border-radius: 10px;
+  margin: 30px auto;
+  font-family: 'MTNBrighterSans';
+  cursor: pointer;
+}
+
+.success-mark svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.success-mark p {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+
+.success-window p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.close-done {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 320px) {
+  .msg-flags p {
+    font-size: 12px;
+  }
 }
