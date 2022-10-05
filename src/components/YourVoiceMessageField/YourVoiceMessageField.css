@@ -1,8 +1,9 @@
 ﻿.msg-container {
   background-color: #fff;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   border-radius: 10px;
   width: 90%;
+  position: relative;
 }
 
 .msg-container .input-data textarea {
@@ -14,6 +15,8 @@
   outline: none;
   resize: none;
   font-size: 1rem;
+  font-family: 'MTNBrighterSans';
+  font-weight: 400;
 }
 
 .character-count {
@@ -23,10 +26,41 @@
 }
 
 .input-data button {
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   text-align: center;
   display: block;
+  background: #fccd08;
+  border: none;
+  padding: 14px 70px;
+  border-radius: 10px;
 }
+
 .input-data button a {
   display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  font-family: 'MTNBrighterSans';
+}
+
+.warning-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 0;
+  font-size: 11px;
+  gap: 2px;
+}
+
+.close-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close-icon:hover {
+  fill: rgb(139, 10, 10);
 }
